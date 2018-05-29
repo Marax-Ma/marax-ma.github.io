@@ -4,24 +4,26 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>My First Article | Marax&#39;s Blog</title>
+    <title>学习阿里数据仓库(1) 数据管理体系 | Marax&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Marax">
     
 
     
-    <meta name="description" content="This is my first article. Though it is for test, I don’t want it to be a piece of nonsense.">
+    <meta name="description" content="系列介绍做为一名数据工程师，数据仓库的建设和维护是工作的首要职责。数据仓库的体系结构和指标维护是所有数据分析和应用的基础。在工作中，我们必须不断要积累经验、思考，还要学习和借鉴其他公司的经验和成功案例。  这一系列文章是对阿里数据仓库建设的一些成熟体系和经验进行总结，内容主要来自于阿里数据技术产品部编写的《大数据之路》一书，并加入了一些自己的思考。计划写三篇，分别写数据管理体系、建模中的维度表、建">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My First Article">
-<meta property="og:url" content="https://marax-ma.github.io/2018/02/13/My-First-Article/index.html">
+<meta property="og:title" content="学习阿里数据仓库(1) 数据管理体系">
+<meta property="og:url" content="https://marax-ma.github.io/2018/02/13/学习阿里数据仓库-1-数据管理体系/index.html">
 <meta property="og:site_name" content="Marax&#39;s Blog">
-<meta property="og:description" content="This is my first article. Though it is for test, I don’t want it to be a piece of nonsense.">
+<meta property="og:description" content="系列介绍做为一名数据工程师，数据仓库的建设和维护是工作的首要职责。数据仓库的体系结构和指标维护是所有数据分析和应用的基础。在工作中，我们必须不断要积累经验、思考，还要学习和借鉴其他公司的经验和成功案例。  这一系列文章是对阿里数据仓库建设的一些成熟体系和经验进行总结，内容主要来自于阿里数据技术产品部编写的《大数据之路》一书，并加入了一些自己的思考。计划写三篇，分别写数据管理体系、建模中的维度表、建">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-02-12T18:32:50.000Z">
+<meta property="og:image" content="https://marax-ma.github.io/2018/02/13/学习阿里数据仓库-1-数据管理体系/ali-data-architecture.jpeg">
+<meta property="og:updated_time" content="2018-04-12T10:37:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My First Article">
-<meta name="twitter:description" content="This is my first article. Though it is for test, I don’t want it to be a piece of nonsense.">
+<meta name="twitter:title" content="学习阿里数据仓库(1) 数据管理体系">
+<meta name="twitter:description" content="系列介绍做为一名数据工程师，数据仓库的建设和维护是工作的首要职责。数据仓库的体系结构和指标维护是所有数据分析和应用的基础。在工作中，我们必须不断要积累经验、思考，还要学习和借鉴其他公司的经验和成功案例。  这一系列文章是对阿里数据仓库建设的一些成熟体系和经验进行总结，内容主要来自于阿里数据技术产品部编写的《大数据之路》一书，并加入了一些自己的思考。计划写三篇，分别写数据管理体系、建模中的维度表、建">
+<meta name="twitter:image" content="https://marax-ma.github.io/2018/02/13/学习阿里数据仓库-1-数据管理体系/ali-data-architecture.jpeg">
 
     
     <link rel="alternative" href="/atom.xml" title="Marax&#39;s Blog" type="application/atom+xml">
@@ -81,14 +83,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2018/02/13/My-First-Article/" title="My First Article" itemprop="url">My First Article</a>
+      <a href="/2018/02/13/学习阿里数据仓库-1-数据管理体系/" title="学习阿里数据仓库(1) 数据管理体系" itemprop="url">学习阿里数据仓库(1) 数据管理体系</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Marax" target="_blank" itemprop="author">Marax</a>
 		
   <p class="article-time">
-    <time datetime="2018-02-12T18:30:16.000Z" itemprop="datePublished"> 发表于 2018-02-13</time>
+    <time datetime="2018-02-13T04:25:17.000Z" itemprop="datePublished"> 发表于 2018-02-13</time>
     
   </p>
 </header>
@@ -97,11 +99,18 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#系列介绍"><span class="toc-number">1.</span> <span class="toc-text">系列介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第一篇-数据管理体系"><span class="toc-number">2.</span> <span class="toc-text">第一篇 数据管理体系</span></a></li></ol>
 		
 		</div>
 		
-		<p>This is my first article. Though it is for test, I don’t want it to be a piece of nonsense.</p>
+		<h3 id="系列介绍"><a href="#系列介绍" class="headerlink" title="系列介绍"></a>系列介绍</h3><p>做为一名数据工程师，数据仓库的建设和维护是工作的首要职责。数据仓库的体系结构和指标维护是所有数据分析和应用的基础。在工作中，我们必须不断要积累经验、思考，还要学习和借鉴其他公司的经验和成功案例。</p>
+
+<p>这一系列文章是对阿里数据仓库建设的一些成熟体系和经验进行总结，内容主要来自于阿里数据技术产品部编写的《大数据之路》一书，并加入了一些自己的思考。计划写三篇，分别写数据管理体系、建模中的维度表、建模中的事实表。那么下面就是开始第一篇：数据管理体系。</p>
+
+<h3 id="第一篇-数据管理体系"><a href="#第一篇-数据管理体系" class="headerlink" title="第一篇 数据管理体系"></a>第一篇 数据管理体系</h3><p>数据管理体系，这是一个比较大的概念，数据一定是从业务而来，从具体的业务规则和运营分析需求抽象出数据域，进而拆解得到业务过程、维度、指标定义，再此基础上构建数仓模型。整体架构可以参考下图。</p>
+
+<p><img src="/2018/02/13/学习阿里数据仓库-1-数据管理体系/ali-data-architecture.jpeg" alt="阿里数据架构图"></p>
+<p>其中<br><strong>业务板块</strong> 是根据公司业务划分出相对独立的业务板块，业务板块之间的指标或业务重叠性较少。如淘系、B2B系。<br><br><strong>规范定义</strong> 是一套数据规范命名体系（包括指标名、字段名），规范将阿里有一套一体化工具OneData帮助实现这一规范。</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -114,7 +123,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="https://marax-ma.github.io/2018/02/13/My-First-Article/" data-title="My First Article | Marax&#39;s Blog" data-tsina="" class="share clearfix">
+	  <div data-url="https://marax-ma.github.io/2018/02/13/学习阿里数据仓库-1-数据管理体系/" data-title="学习阿里数据仓库(1) 数据管理体系 | Marax&#39;s Blog" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -128,18 +137,18 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2018/02/13/学习阿里数据仓库-1-数据管理体系/" title="学习阿里数据仓库(1) 数据管理体系">
+ <a href="/2018/04/28/Hadoop-on-Yarn-环境搭建/" title="Hadoop on Yarn 环境搭建">
   <strong>上一篇：</strong><br/>
   <span>
-  学习阿里数据仓库(1) 数据管理体系</span>
+  Hadoop on Yarn 环境搭建</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2018/02/11/hello-world/"  title="Hello World">
+<a href="/2018/02/13/My-First-Article/"  title="My First Article">
  <strong>下一篇：</strong><br/> 
- <span>Hello World
+ <span>My First Article
 </span>
 </a>
 </div>
@@ -156,7 +165,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#系列介绍"><span class="toc-number">1.</span> <span class="toc-text">系列介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#第一篇-数据管理体系"><span class="toc-number">2.</span> <span class="toc-text">第一篇 数据管理体系</span></a></li></ol>
  
   </div>
 

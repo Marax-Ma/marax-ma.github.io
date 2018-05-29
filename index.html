@@ -79,6 +79,314 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2018/05/14/HBase部署/" title="HBase部署" itemprop="url">HBase部署</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Marax" target="_blank" itemprop="author">Marax</a>
+		
+  <p class="article-time">
+    <time datetime="2018-05-13T16:49:55.000Z" itemprop="datePublished"> 发表于 2018-05-14</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2018/05/08/Kafka-环境搭建/" title="Kafka 环境搭建" itemprop="url">Kafka 环境搭建</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Marax" target="_blank" itemprop="author">Marax</a>
+		
+  <p class="article-time">
+    <time datetime="2018-05-08T01:17:27.000Z" itemprop="datePublished"> 发表于 2018-05-08</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2018/04/28/Spark部署/" title="Spark部署" itemprop="url">Spark部署</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Marax" target="_blank" itemprop="author">Marax</a>
+		
+  <p class="article-time">
+    <time datetime="2018-04-28T06:58:16.000Z" itemprop="datePublished"> 发表于 2018-04-28</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p></p><p>解决下载https资源的问题</p><p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">yum update wget</span><br><span class="line">wget --no-cookie --no-check-certificate &lt;url&gt;</span><br></pre></td></tr></table></figure></p>
+<p>conf/spark-env.sh 是必须要配置的</p>
+<p>在spark/conf 中添加 hive-site.xml，填入 metastore<br>启动metastore<br>nohup hive –service metastore 2&gt;&amp;1 &gt;&gt; /var/metastore.log &amp;</p>
+<p>参考<br>解决下载https资源的问题<br><a href="https://blog.csdn.net/u011630575/article/details/73521611" target="_blank" rel="noopener">https://blog.csdn.net/u011630575/article/details/73521611</a><br><a href="https://blog.csdn.net/reblue520/article/details/76287055" target="_blank" rel="noopener">https://blog.csdn.net/reblue520/article/details/76287055</a><br>scala 安装 <a href="https://blog.csdn.net/bahaidong/article/details/44220633" target="_blank" rel="noopener">https://blog.csdn.net/bahaidong/article/details/44220633</a><br>spark 安装 <a href="https://www.cnblogs.com/purstar/p/6293605.html" target="_blank" rel="noopener">https://www.cnblogs.com/purstar/p/6293605.html</a><br>spark-sql 配置 <a href="https://blog.csdn.net/jiangzeyun/article/details/52712735" target="_blank" rel="noopener">https://blog.csdn.net/jiangzeyun/article/details/52712735</a></p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2018/04/28/Hive部署/" title="Hive部署" itemprop="url">Hive部署</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Marax" target="_blank" itemprop="author">Marax</a>
+		
+  <p class="article-time">
+    <time datetime="2018-04-28T05:10:22.000Z" itemprop="datePublished"> 发表于 2018-04-28</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>参考<br>mysql部署 <a href="https://www.cnblogs.com/lzj0218/p/5724446.html" target="_blank" rel="noopener">https://www.cnblogs.com/lzj0218/p/5724446.html</a><br>mysql访问权限 <a href="https://blog.csdn.net/bingjianit/article/details/54384299" target="_blank" rel="noopener">https://blog.csdn.net/bingjianit/article/details/54384299</a><br>Hive部署 <a href="https://segmentfault.com/a/1190000011303459" target="_blank" rel="noopener">https://segmentfault.com/a/1190000011303459</a></p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2018/04/28/Hadoop-on-Yarn-环境搭建/" title="Hadoop on Yarn 环境搭建" itemprop="url">Hadoop on Yarn 环境搭建</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Marax" target="_blank" itemprop="author">Marax</a>
+		
+  <p class="article-time">
+    <time datetime="2018-04-28T03:09:53.000Z" itemprop="datePublished"> 发表于 2018-04-28</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <p>参考<br>关键步骤 <a href="https://www.cnblogs.com/zishengY/p/6819160.html" target="_blank" rel="noopener">https://www.cnblogs.com/zishengY/p/6819160.html</a><br>超详细 <a href="http://dongxicheng.org/mapreduce-nextgen/hadoop-yarn-install/" target="_blank" rel="noopener">http://dongxicheng.org/mapreduce-nextgen/hadoop-yarn-install/</a><br>配置文件解释 <a href="http://www.cnblogs.com/yinghun/p/6230436.html" target="_blank" rel="noopener">http://www.cnblogs.com/yinghun/p/6230436.html</a><br>内存不足NM不能启动 <a href="https://blog.csdn.net/qq_32815807/article/details/78112890" target="_blank" rel="noopener">https://blog.csdn.net/qq_32815807/article/details/78112890</a></p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2018/02/13/学习阿里数据仓库-1-数据管理体系/" title="学习阿里数据仓库(1) 数据管理体系" itemprop="url">学习阿里数据仓库(1) 数据管理体系</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Marax" target="_blank" itemprop="author">Marax</a>
+		
+  <p class="article-time">
+    <time datetime="2018-02-13T04:25:17.000Z" itemprop="datePublished"> 发表于 2018-02-13</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        <h3 id="系列介绍"><a href="#系列介绍" class="headerlink" title="系列介绍"></a>系列介绍</h3><p>做为一名数据工程师，数据仓库的建设和维护是工作的首要职责。数据仓库的体系结构和指标维护是所有数据分析和应用的基础。在工作中，我们必须不断要积累经验、思考，还要学习和借鉴其他公司的经验和成功案例。</p>
+
+<p>这一系列文章是对阿里数据仓库建设的一些成熟体系和经验进行总结，内容主要来自于阿里数据技术产品部编写的《大数据之路》一书，并加入了一些自己的思考。计划写三篇，分别写数据管理体系、建模中的维度表、建模中的事实表。那么下面就是开始第一篇：数据管理体系。</p>
+
+<h3 id="第一篇-数据管理体系"><a href="#第一篇-数据管理体系" class="headerlink" title="第一篇 数据管理体系"></a>第一篇 数据管理体系</h3><p>数据管理体系，这是一个比较大的概念，数据一定是从业务而来，从具体的业务规则和运营分析需求抽象出数据域，进而拆解得到业务过程、维度、指标定义，再此基础上构建数仓模型。整体架构可以参考下图。</p>
+
+<p><img src="/2018/02/13/学习阿里数据仓库-1-数据管理体系/ali-data-architecture.jpeg" alt="阿里数据架构图"></p>
+<p>其中<br><strong>业务板块</strong> 是根据公司业务划分出相对独立的业务板块，业务板块之间的指标或业务重叠性较少。如淘系、B2B系。<br><br><strong>规范定义</strong> 是一套数据规范命名体系（包括指标名、字段名），规范将阿里有一套一体化工具OneData帮助实现这一规范。</p>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2018/02/13/My-First-Article/" title="My First Article" itemprop="url">My First Article</a>
   </h1>
   <p class="article-author">By

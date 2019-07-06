@@ -4,24 +4,24 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Kafka 环境搭建 | Marax&#39;s Blog</title>
+    <title>Python装饰器 | Marax&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Marax">
     
 
     
-    <meta name="description" content="搭建zookeeper集群后，需要在各节点上分别运行？ 参考zookeeper 环境搭建 https://www.cnblogs.com/lsdb/p/7297731.html pyspark-streaming + Kafka 问题：error: command ‘gcc’ failed with exit status 1yum remove audityum install gccyum i">
+    <meta name="description" content="Why想为已经存在的函数或对象添加额外的功能，又不改变原函数和对象的代码。这时就会用到装饰器。 What装饰器的理念是对原函数、对象的加强，相当于重新封装，所以一般装饰器函数都被命名为wrapper()，意义在于包装。 标准装饰器12345678910def debug(func):    def wrapper(*args, **kwargs):  # 指定宇宙无敌参数        print">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Kafka 环境搭建">
-<meta property="og:url" content="https://marax-ma.github.io/2018/05/08/Kafka-环境搭建/index.html">
+<meta property="og:title" content="Python装饰器">
+<meta property="og:url" content="https://marax-ma.github.io/2019/04/15/Python装饰器/index.html">
 <meta property="og:site_name" content="Marax&#39;s Blog">
-<meta property="og:description" content="搭建zookeeper集群后，需要在各节点上分别运行？ 参考zookeeper 环境搭建 https://www.cnblogs.com/lsdb/p/7297731.html pyspark-streaming + Kafka 问题：error: command ‘gcc’ failed with exit status 1yum remove audityum install gccyum i">
+<meta property="og:description" content="Why想为已经存在的函数或对象添加额外的功能，又不改变原函数和对象的代码。这时就会用到装饰器。 What装饰器的理念是对原函数、对象的加强，相当于重新封装，所以一般装饰器函数都被命名为wrapper()，意义在于包装。 标准装饰器12345678910def debug(func):    def wrapper(*args, **kwargs):  # 指定宇宙无敌参数        print">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-28T06:19:54.000Z">
+<meta property="og:updated_time" content="2019-05-28T06:19:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Kafka 环境搭建">
-<meta name="twitter:description" content="搭建zookeeper集群后，需要在各节点上分别运行？ 参考zookeeper 环境搭建 https://www.cnblogs.com/lsdb/p/7297731.html pyspark-streaming + Kafka 问题：error: command ‘gcc’ failed with exit status 1yum remove audityum install gccyum i">
+<meta name="twitter:title" content="Python装饰器">
+<meta name="twitter:description" content="Why想为已经存在的函数或对象添加额外的功能，又不改变原函数和对象的代码。这时就会用到装饰器。 What装饰器的理念是对原函数、对象的加强，相当于重新封装，所以一般装饰器函数都被命名为wrapper()，意义在于包装。 标准装饰器12345678910def debug(func):    def wrapper(*args, **kwargs):  # 指定宇宙无敌参数        print">
 
     
     <link rel="alternative" href="/atom.xml" title="Marax&#39;s Blog" type="application/atom+xml">
@@ -81,14 +81,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2018/05/08/Kafka-环境搭建/" title="Kafka 环境搭建" itemprop="url">Kafka 环境搭建</a>
+      <a href="/2019/04/15/Python装饰器/" title="Python装饰器" itemprop="url">Python装饰器</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Marax" target="_blank" itemprop="author">Marax</a>
 		
   <p class="article-time">
-    <time datetime="2018-05-08T01:17:27.000Z" itemprop="datePublished"> 发表于 2018-05-08</time>
+    <time datetime="2019-04-15T03:32:46.000Z" itemprop="datePublished"> 发表于 2019-04-15</time>
     
   </p>
 </header>
@@ -101,12 +101,11 @@
 		
 		</div>
 		
-		<p>搭建zookeeper集群后，需要在各节点上分别运行？</p>
-<p>参考<br>zookeeper 环境搭建 <a href="https://www.cnblogs.com/lsdb/p/7297731.html" target="_blank" rel="noopener">https://www.cnblogs.com/lsdb/p/7297731.html</a></p>
-<p>pyspark-streaming + Kafka</p>
-<p>问题：error: command ‘gcc’ failed with exit status 1<br>yum remove audit<br>yum install gcc<br>yum install libxslt-devel libxml2-devel</p>
-<p>想用jupyter，但是遇到了sqlite兼容性问题<br><a href="https://blog.csdn.net/vah101/article/details/72847160" target="_blank" rel="noopener">https://blog.csdn.net/vah101/article/details/72847160</a><br>但还是有问题，解决方法：<br>安装sqlite-devel<br>重新安装 python</p>
-<p>问题：磁盘空间满了<br><a href="https://blog.csdn.net/fjssharpsword/article/details/52161232" target="_blank" rel="noopener">https://blog.csdn.net/fjssharpsword/article/details/52161232</a></p>
+		<p>Why<br>想为已经存在的函数或对象添加额外的功能，又不改变原函数和对象的代码。这时就会用到装饰器。</p>
+<p>What<br>装饰器的理念是对原函数、对象的加强，相当于重新封装，所以一般装饰器函数都被命名为wrapper()，意义在于包装。</p>
+<p>标准装饰器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">def debug(func):</span><br><span class="line">    def wrapper(*args, **kwargs):  # 指定宇宙无敌参数</span><br><span class="line">        print &quot;[DEBUG]: enter &#123;&#125;()&quot;.format(func.__name__)</span><br><span class="line">        print &apos;Prepare and say...&apos;,</span><br><span class="line">        return func(*args, **kwargs)</span><br><span class="line">    return wrapper  # 返回</span><br><span class="line"></span><br><span class="line">@debug</span><br><span class="line">def say(something):</span><br><span class="line">    print &quot;hello &#123;&#125;!&quot;.format(something)</span><br></pre></td></tr></table></figure></p>
+<p>带参数的装饰器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">def logging(level):</span><br><span class="line">    def wrapper(func):</span><br><span class="line">        def inner_wrapper(*args, **kwargs):</span><br><span class="line">            print &quot;[&#123;level&#125;]: enter function &#123;func&#125;()&quot;.format(</span><br><span class="line">                level=level,</span><br><span class="line">                func=func.__name__)</span><br><span class="line">            return func(*args, **kwargs)</span><br><span class="line">        return inner_wrapper</span><br><span class="line">    return wrapper</span><br><span class="line"></span><br><span class="line">@logging(level=&apos;INFO&apos;)</span><br><span class="line">def say(something):</span><br><span class="line">    print &quot;say &#123;&#125;!&quot;.format(something)</span><br><span class="line"></span><br><span class="line"># 如果没有使用@语法，等同于</span><br><span class="line"># say = logging(level=&apos;INFO&apos;)(say)</span><br><span class="line"></span><br><span class="line">@logging(level=&apos;DEBUG&apos;)</span><br><span class="line">def do(something):</span><br><span class="line">    print &quot;do &#123;&#125;...&quot;.format(something)</span><br><span class="line"></span><br><span class="line">if __name__ == &apos;__main__&apos;:</span><br><span class="line">    say(&apos;hello&apos;)</span><br><span class="line">    do(&quot;my work&quot;)</span><br></pre></td></tr></table></figure></p>
+<p>How<br>实际使用时可以使用第三方库<br>decorator.py<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">from decorator import decorator</span><br><span class="line"></span><br><span class="line">@decorator</span><br><span class="line">def logging(func, *args, **kwargs):</span><br><span class="line">    print &quot;[DEBUG] &#123;&#125;: enter &#123;&#125;()&quot;.format(datetime.now(), func.__name__)</span><br><span class="line">    return func(*args, **kwargs)</span><br></pre></td></tr></table></figure></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -119,7 +118,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="https://marax-ma.github.io/2018/05/08/Kafka-环境搭建/" data-title="Kafka 环境搭建 | Marax&#39;s Blog" data-tsina="" class="share clearfix">
+	  <div data-url="https://marax-ma.github.io/2019/04/15/Python装饰器/" data-title="Python装饰器 | Marax&#39;s Blog" data-tsina="" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -132,19 +131,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2018/05/14/HBase部署/" title="HBase部署">
-  <strong>上一篇：</strong><br/>
-  <span>
-  HBase部署</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2018/04/28/Spark部署/"  title="Spark部署">
+<a href="/2019/04/01/编写UDAF时遇到java-lang-NoSuchMethodException/"  title="编写UDAF时遇到java.lang.NoSuchMethodException">
  <strong>下一篇：</strong><br/> 
- <span>Spark部署
+ <span>编写UDAF时遇到java.lang.NoSuchMethodException
 </span>
 </a>
 </div>

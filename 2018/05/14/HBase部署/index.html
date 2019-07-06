@@ -11,14 +11,17 @@
     
 
     
-    <meta property="og:type" content="article">
+    <meta name="description" content="遇到时钟不同步问题122018-05-14 20:49:59,577 ERROR [regionserver/hadoop02:16020] regionserver.HRegionServer: Master rejected startup because clock is out of syncorg.apache.hadoop.hbase.ClockOutOfSyncException:">
+<meta property="og:type" content="article">
 <meta property="og:title" content="HBase部署">
 <meta property="og:url" content="https://marax-ma.github.io/2018/05/14/HBase部署/index.html">
 <meta property="og:site_name" content="Marax&#39;s Blog">
+<meta property="og:description" content="遇到时钟不同步问题122018-05-14 20:49:59,577 ERROR [regionserver/hadoop02:16020] regionserver.HRegionServer: Master rejected startup because clock is out of syncorg.apache.hadoop.hbase.ClockOutOfSyncException:">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-13T16:49:55.000Z">
+<meta property="og:updated_time" content="2019-05-28T06:20:15.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HBase部署">
+<meta name="twitter:description" content="遇到时钟不同步问题122018-05-14 20:49:59,577 ERROR [regionserver/hadoop02:16020] regionserver.HRegionServer: Master rejected startup because clock is out of syncorg.apache.hadoop.hbase.ClockOutOfSyncException:">
 
     
     <link rel="alternative" href="/atom.xml" title="Marax&#39;s Blog" type="application/atom+xml">
@@ -98,7 +101,10 @@
 		
 		</div>
 		
-		  
+		<p>遇到时钟不同步问题<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2018-05-14 20:49:59,577 ERROR [regionserver/hadoop02:16020] regionserver.HRegionServer: Master rejected startup because clock is out of sync</span><br><span class="line">org.apache.hadoop.hbase.ClockOutOfSyncException: org.apache.hadoop.hbase.ClockOutOfSyncException: Server slave1,16020,1526302194972 has been rejected; Reported time is too far out of sync with master.  Time difference of 432342ms &gt; max allowed of 30000ms</span><br></pre></td></tr></table></figure></p>
+<p>时钟设置 <a href="https://blog.csdn.net/bbirdsky/article/details/20445385" target="_blank" rel="noopener">https://blog.csdn.net/bbirdsky/article/details/20445385</a></p>
+<p>参考资料<br>HBse安装 <a href="https://www.cnblogs.com/lzxlfly/p/7221890.html" target="_blank" rel="noopener">https://www.cnblogs.com/lzxlfly/p/7221890.html</a><br>ZooKeeper + HBase <a href="https://blog.csdn.net/M_SIGNALs/article/details/52948867" target="_blank" rel="noopener">https://blog.csdn.net/M_SIGNALs/article/details/52948867</a></p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
@@ -123,6 +129,14 @@
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2018/08/06/知识图谱构建/" title="知识图谱构建">
+  <strong>上一篇：</strong><br/>
+  <span>
+  知识图谱构建</span>
+</a>
+</div>
+
 
 <div class="next">
 <a href="/2018/05/08/Kafka-环境搭建/"  title="Kafka 环境搭建">
@@ -225,7 +239,7 @@
 		
 
 		<p class="copyright">
-		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2018 
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2019 
 		
 		<a href="/about" target="_blank" title="Marax">Marax</a>
 		
